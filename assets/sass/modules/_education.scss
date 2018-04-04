@@ -1,0 +1,21 @@
+.education {
+  grid-area: education;
+  &__school {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__desc {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  &__year {
+    color: #414141;
+    margin-top: 20px;
+  }
+  &__faculty {
+    font-size: 17px;
+  }
+}

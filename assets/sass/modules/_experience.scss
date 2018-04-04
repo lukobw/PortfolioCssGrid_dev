@@ -1,0 +1,71 @@
+@import "compass";
+@import "compass/css3";
+
+.experience {
+  background-color: rgb(73, 100, 117);
+  grid-area: experience;
+  grid-column: 1 / 4;
+  overflow: hidden;
+  padding: 25px;
+  position: relative;
+
+  &:before {
+    background-color: #414141;
+    content: "";
+    height: 89%;
+    left: 35px;
+    overflow: hidden;
+    position: absolute;
+    top: 9%;
+    width: 2px;
+    z-index: 3
+  }
+  &__desc {
+    background-color: rgb(84, 108, 124);
+    margin: 25px 0 15px 45px;
+    padding: 20px;
+    position: relative;
+    &:before {
+      @include border-radius(100%);
+      border: 1px solid #414141;
+      background-color: rgb(70, 185, 219); 
+      content: "";
+      height: 15px;
+      left: -42px;
+      top: 50%;
+      position: absolute;
+      width: 15px;
+      z-index: 5;
+
+    }
+  }
+  &__name {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: uppercase;
+  }
+  .company {
+    &__heading {
+      font-size: 1.5em;
+      margin: 0;
+      text-align: center;
+      .lg-span {
+        color: #77787A;
+        text-align: center;
+      }
+    }
+    &__position {
+      color: #fff;
+      font-size: 1.2em;
+      margin: 5px 0;
+      text-align: center;
+    }
+    &__duration {
+      color: #ebebeb;
+      font-size: .9em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+ 
+}

@@ -1,0 +1,34 @@
+.header-photo {
+	border: 10px solid #fff;
+	grid-area: photo;
+	grid-column: 1/2;
+	img {
+		max-width: 100%;
+	}
+}
+.desc {
+	background-color: rgb(73, 100, 117);
+	grid-area: desc;
+	padding: 30px;
+	text-align: left;
+	&__title {
+		color: #fff;
+		font-size: 2.5em;
+		margin: 0 0 15px 0;
+	}
+	&__subtitle {
+		margin: 0 0 15px 0;
+		color: rgb(70, 185, 219);
+		font-size: 1.875em;
+	}
+	&__p {
+		color: #fff;
+		font-size: 1.2em;
+		line-height: 1.4;
+		margin: 10px 0;
+		text-indent: 60px;
+	}
+	&__span {
+		text-indent: 60px;
+	}
+}

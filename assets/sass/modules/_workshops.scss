@@ -1,0 +1,25 @@
+.workshops {
+  grid-area: workshops;
+  grid-column: 4;
+  .workshops-certificates {
+    text-align: left;
+    &__box {
+      .fa-external-link-alt {
+        color: #02AC46;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    &__a {
+      display: inline-block;
+      margin-left: 15px;
+      padding: 5px 0;
+      vertical-align: middle;
+      @include transition(all .4s);
+      &:hover {
+        
+        text-shadow: 1px 1px #02AC46;
+      }
+    }
+  } 
+}

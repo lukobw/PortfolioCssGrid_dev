@@ -1,0 +1,56 @@
+@import "compass";
+@import "compass/css3";
+
+@import "modules/buttons";
+@import "modules/contact";
+@import "modules/education";
+@import "modules/experience";
+@import "modules/footer";
+@import "modules/header";
+@import "modules/list";
+@import "modules/skills";
+@import "modules/standalone";
+@import "modules/workshops";
+
+	
+.portfolio {
+	background-color: rgb(224, 224, 224);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	// grid-auto-columns: 1fr;
+	grid-template-areas: 
+	"photo desc desc desc" 
+	"experience experience experience contact"
+	"experience experience experience education"
+	"skills skills workshops workshops"
+	"footer footer footer footer";
+	grid-row-gap: 25px;
+	grid-column-gap: 25px;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	margin: 25px auto;
+	padding: 40px;
+	overflow: hidden;
+	width: 1200px;
+	*, *:before, *:after {
+		@include box-sizing(border-box);
+	}
+	h1, h2, h3, h4 {
+		font-weight: inherit;
+		padding: 0;
+	}
+	.i-desc {
+		color: rgb(70, 185, 219); 
+    font-size: 1.5em;
+    font-weight: 700;
+	}
+	.i-font {
+		[class*="fa-"]	{
+			color: rgb(70, 185, 219); 
+		}
+	}
+	@import "modules/media";
+}
