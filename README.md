@@ -1,3 +1,2 @@
-# portfolio
 
-lucas-obwarzanek.pl
+http://lucas-obwarzanek.pl/PortfolioCssGrid_dev/
