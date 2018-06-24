@@ -11,7 +11,7 @@
       height: 64px;
       margin: 0 auto;
       width: 64px;
-      @include transition(all .4s ease);
+      transition: all .4s ease;
       &:hover {
         transform: scale(1.2);
       }

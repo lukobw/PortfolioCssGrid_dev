@@ -1,11 +1,17 @@
 .education {
   grid-area: education;
-  &__school {
+  &__item {
     color: #000;
-    font-size: 20px;
     font-weight: 700;
+    line-height: 1.4;
     margin-bottom: 20px;
     text-align: center;
+  }
+  &__school {
+    font-size: 20px;
+  }
+  &__year {
+    font-size: 14px;
   }
   &__desc {
     font-size: 15px;
@@ -14,8 +20,5 @@
   &__year {
     color: #414141;
     margin-top: 20px;
-  }
-  &__faculty {
-    font-size: 17px;
   }
 }

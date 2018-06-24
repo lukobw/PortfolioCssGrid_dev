@@ -1,13 +1,10 @@
-@import "compass";
-@import "compass/css3";
-
 .experience {
   background-color: rgb(73, 100, 117);
   grid-area: experience;
-  grid-column: 1 / 4;
   overflow: hidden;
   padding: 25px;
   position: relative;
+  text-align: center;
 
   &:before {
     background-color: #414141;
@@ -26,7 +23,7 @@
     padding: 20px;
     position: relative;
     &:before {
-      @include border-radius(100%);
+      border-radius: 100%;
       border: 1px solid #414141;
       background-color: rgb(70, 185, 219); 
       content: "";
@@ -42,7 +39,7 @@
   &__name {
     color: #fff;
     font-size: 1.2em;
-    text-decoration: uppercase;
+    text-transform: uppercase;
   }
   .company {
     &__heading {

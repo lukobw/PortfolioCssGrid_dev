@@ -8,18 +8,19 @@
         color: #02AC46;
         display: inline-block;
         vertical-align: middle;
+        visibility: visible;
       }
     }
     &__a {
       display: inline-block;
-      margin-left: 15px;
-      padding: 5px 0;
+      font-weight: 400;
+      margin-right: 20px;
+      padding: 10px 0;
       vertical-align: middle;
-      @include transition(all .4s);
+      transition: all .4s;
       &:hover {
-        
-        text-shadow: 1px 1px #02AC46;
+        font-weight: 700;
       }
     }
-  } 
-}
+  }
+} 
